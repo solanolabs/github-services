@@ -1,0 +1,31 @@
+Solano CI - Continuous Integration and Deployment
+-------------------------------------------------
+
+Learn more at [solanolabs.com](https://www.solanolabs.com).
+
+Install Notes
+-------------
+
+This hook will be automatically configured for GitHub repos you've configured
+with a connected Solano CI account.
+
+If you don't want to connect your Github account, or you don't want to give
+Solano CI `repo` privileges, follow these steps:
+
+1. Go to your Solano CI dashboard
+2. Open the Configuration page for this repo and click on the 'CI Setup' section
+3. Copy the hex value listed under 'CI Token'
+4. Paste the token below.
+5. Install Solano CI's repo-specific public key into this repo's deploy keys.  
+
+You can safely leave the Override URL field blank.
+
+Supported Events
+----------------
+
+Solano CI monitors all events on your repo, but it currently only acts on:
+
+- push
+- create a branch
+- delete a branch
+- open, close, synchronize pull requests
